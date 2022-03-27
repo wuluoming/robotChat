@@ -27,7 +27,7 @@
         //清空sessionStorage
         sessionStorage.removeItem('token');
         //界面跳转
-        window.location.replace('/login.html');
+        window.location.replace(BASE_URL + 'login.html');
     }
     //键盘输入事件
     function inputContainerKeyup(e) {
@@ -82,7 +82,7 @@
             method: 'POST',
             params: { content },
         });
-        console.log(res);
+
         renderChatForm([{ from: 'robot', content: res.content }], 'bottom');
     }
 

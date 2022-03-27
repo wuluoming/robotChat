@@ -62,7 +62,7 @@
         //     window.alert(res.msg);
         //     return;
         // }
-        res && window.location.replace('/');
+        res && window.location.replace(BASE_URL);
     }
 
     function checkForm(loginId, nickname, loginPwd, confirmPwd) {

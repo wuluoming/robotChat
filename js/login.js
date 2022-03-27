@@ -25,7 +25,7 @@
             method: 'POST',
             params: { loginId, loginPwd },
         });
-        res && window.location.replace('/');
+        res && window.location.replace(BASE_URL);
 
         // const result = await fetch('https://study.duyiedu.com/api/user/login', {
         //     method: 'POST',
